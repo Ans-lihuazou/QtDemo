@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QListView" name="listView"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actNewFile"/>
+    <addaction name="actOpenFile"/>
+    <addaction name="actSave"/>
+    <addaction name="actOtherSave"/>
+    <addaction name="actClose"/>
+   </widget>
+   <widget class="QMenu" name="menuOperator">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actLast"/>
+    <addaction name="separator"/>
+    <addaction name="actCopy"/>
+    <addaction name="actCut"/>
+    <addaction name="actPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actSelectAll"/>
+    <addaction name="separator"/>
+    <addaction name="actDate"/>
+    <addaction name="separator"/>
+    <addaction name="actFind"/>
+    <addaction name="actFindLast"/>
+    <addaction name="actFindNext"/>
+    <addaction name="actReplace"/>
+   </widget>
+   <widget class="QMenu" name="menuStyle">
+    <property name="title">
+     <string>格式</string>
+    </property>
+    <addaction name="actFont"/>
+    <addaction name="actLine"/>
+   </widget>
+   <widget class="QMenu" name="menuSee">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>缩放</string>
+     </property>
+     <addaction name="actBig"/>
+     <addaction name="actSmall"/>
+     <addaction name="actInit"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="actState"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOperator"/>
+   <addaction name="menuStyle"/>
+   <addaction name="menuSee"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actNewFile">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actOpenFile">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actOtherSave">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actCopy">
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="actPaste">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="actCut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="actDelete">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="actLast">
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="actFont">
+   <property name="text">
+    <string>字体</string>
+   </property>
+  </action>
+  <action name="actLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>自动换行</string>
+   </property>
+  </action>
+  <action name="actState">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>状态栏</string>
+   </property>
+  </action>
+  <action name="actBig">
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actSmall">
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actInit">
+   <property name="text">
+    <string>恢复默认缩放</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actSelectAll">
+   <property name="text">
+    <string>全选</string>
+   </property>
+  </action>
+  <action name="actDate">
+   <property name="text">
+    <string>日期/时间</string>
+   </property>
+  </action>
+  <action name="actFind">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="actFindLast">
+   <property name="text">
+    <string>查找上一个</string>
+   </property>
+  </action>
+  <action name="actFindNext">
+   <property name="text">
+    <string>查找下一个</string>
+   </property>
+  </action>
+  <action name="actReplace">
+   <property name="text">
+    <string>替换</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
